@@ -84,10 +84,10 @@ export function sortbylived() {
 export function sortByLastName() {
  return inventors.sort((a,b)=>{
 	 if((a.last)>(b.last))
-		 return -1;
+		 return 1;
 	 else
 		 if((a.last)<(b.last))
-			 return 1;
+			 return -1;
 	 return 0;
  })
 }
