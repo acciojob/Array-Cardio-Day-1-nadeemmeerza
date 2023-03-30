@@ -83,7 +83,7 @@ export function sortbylived() {
 // Sort the people alphabetically by last name and return the sorted array
 export function sortByLastName() {
  return people.sort((a,b)=>{
-	 if((a).split(",")[1]>(b).split(",")[1])
+	 if(a.split(",")[1] < b.split(",")[1])
 		 return 1;
 	 else
 		 // if((a).split(",")[1]<(b).split(",")[1])
