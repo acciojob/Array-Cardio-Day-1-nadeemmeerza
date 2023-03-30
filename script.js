@@ -86,9 +86,9 @@ export function sortByLastName() {
 	 if((a).split(",")[1]>(b).split(",")[1])
 		 return 1;
 	 else
-		 if((a).split(",")[1]<(b).split(",")[1])
+		 // if((a).split(",")[1]<(b).split(",")[1])
 			 return -1;
-	 return 0;
+	 // return 0;
  })
 }
 
