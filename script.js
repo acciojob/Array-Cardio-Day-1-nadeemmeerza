@@ -42,16 +42,15 @@ export function map() {
 	})
 }
 
-
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest and return the sorted array
 export function sort() {
 	return inventors.sort((a, b)=>{
 		if(a.year<b.year)
-			return -1;
+			return 1;
 		else
 			if(a.year>b.year)
-			return 1;
+			return -1;
 		return 0;
 	})
 }
