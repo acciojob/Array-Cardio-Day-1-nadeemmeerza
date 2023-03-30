@@ -96,7 +96,7 @@ export function sortByLastName() {
 // Sum up the instances of each of these
 const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck', 'pogostick'];
 
-export function reducedSum(data) {
+export function reducedSum() {
     // Return an object containing transports as key and its number of occurances 
 	//as the key's value
 	return data.reduce((accumulator, item)=>{
