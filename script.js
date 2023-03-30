@@ -105,5 +105,5 @@ export function reducedSum(data) {
 		else
 			accumulator[data] = 1;
 		return accumulator;
-	})
+	},{})
 }
