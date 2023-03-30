@@ -82,7 +82,7 @@ export function sortbylived() {
 // 6. sort Exercise
 // Sort the people alphabetically by last name and return the sorted array
 export function sortByLastName() {
- return inventors.sort((a,b)=>{
+ return people.sort((a,b)=>{
 	 if((a.last)>(b.last))
 		 return -1;
 	 else
