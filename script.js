@@ -86,9 +86,9 @@ export function sortByLastName() {
 	 if((a.last)>(b.last))
 		 return -1;
 	 else
-		 // if((a.last)<(b.last))
+		 if((a.last)<(b.last))
 			 return 1;
-	 // return 0;
+	 return 0;
  })
 }
 
