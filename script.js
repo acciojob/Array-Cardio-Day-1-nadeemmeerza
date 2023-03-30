@@ -37,7 +37,7 @@ export function myfilter() {
 // 2. Give us an array of the inventor first and last names (i.e. full name)
 // Ex: For the first inventor the full name will be 'Albert Einstein'
 export function map() {
-	inventors.map((obj)=>{
+	return inventors.map((obj)=>{
 		return obj.first +" "+ obj.last;
 	})
 }
@@ -46,7 +46,15 @@ export function map() {
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest and return the sorted array
 export function sort() {
+	return inventors.sort((a, b)=>{
+		if(a.year<b.year)
+			return -1;
+		else
+			if(a.year>b.year)
+			return 1;
 
+		return 0;
+	})
 }
 
 
