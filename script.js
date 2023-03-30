@@ -72,9 +72,9 @@ export function reduce() {
 export function sortbylived() {
 	return inventors.sort((a,b)=>{
 		if((a.passed-a.year)<(b.passed-b.year))
-			return -1;
-		else if((a.passed-a.year)>(b.passed-b.year))
 			return 1;
+		else if((a.passed-a.year)>(b.passed-b.year))
+			return -1;
 		return 0;
 	})
 }
