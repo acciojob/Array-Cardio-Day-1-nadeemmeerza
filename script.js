@@ -52,7 +52,6 @@ export function sort() {
 		else
 			if(a.year>b.year)
 			return 1;
-
 		return 0;
 	})
 }
@@ -62,7 +61,7 @@ export function sort() {
 // 4. How many years did all the inventors live?
 // Return the total number of years all the inventors lived
 export function reduce() {
-	inventors.reduce((total, obj)=>{
+	 return inventors.reduce((total, obj)=>{
 		return total + (obj.year-obj.passed);
 	})
 }
@@ -75,7 +74,14 @@ export function sortbylived() {
 // 6. sort Exercise
 // Sort the people alphabetically by last name and return the sorted array
 export function sortByLastName() {
-
+ return inventors.sort((a,b)=>{
+	 if((a.passed-a.year)>(b.passed-b.year))
+		 return -1;
+	 else
+		 if((a.passed-a.year)<(b.passed-b.year))
+			 return 1;
+	 return 0;
+ })
 }
 
 // 7. Reduce Exercise
