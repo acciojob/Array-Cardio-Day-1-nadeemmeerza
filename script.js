@@ -59,7 +59,6 @@ export function sort() {
 	})
 }
 
-
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live?
 // Return the total number of years all the inventors lived
