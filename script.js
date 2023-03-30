@@ -30,6 +30,10 @@ const people = [
 // 1. Filter the list of inventors for those who were born in the 1500's 
 //and return the filtered array
 export function myfilter() {
+	 return inventors.filter((item)=>{
+   if(item.year >= 1500 && item.year<1600)
+     return item;
+ })
 
 }
 
