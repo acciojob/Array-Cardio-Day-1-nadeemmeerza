@@ -47,10 +47,10 @@ export function map() {
 export function sort() {
 	return inventors.sort((a, b)=>{
 		if(a.year<b.year)
-			return 1;
+			return -1;
 		else
 			if(a.year>b.year)
-			return -1;
+			return 1;
 		return 0;
 	})
 }
@@ -96,7 +96,11 @@ const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bik
 export function reducedSum() {
     // Return an object containing transports as key and its number of occurances 
 	//as the key's value
-	return inventors.reduce((total, data)=>{
-		
-	})
+	return inventors.reduce((accumulator, item)=>{
+		if(item in accumulator)
+			accumulator[item]++;
+		else
+			accumulator[item] = 1;
+		return accumulator;
+	},{})
 }
