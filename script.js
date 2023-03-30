@@ -99,11 +99,11 @@ const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bik
 export function reducedSum(data) {
     // Return an object containing transports as key and its number of occurances 
 	//as the key's value
-	return data.reduce((accumulator, data)=>{
-		if(data in accumulator)
-			accumulator[data]++;
+	return data.reduce((accumulator, item)=>{
+		if(item in accumulator)
+			accumulator[item]++;
 		else
-			accumulator[data] = 1;
+			accumulator[item] = 1;
 		return accumulator;
 	},{})
 }
